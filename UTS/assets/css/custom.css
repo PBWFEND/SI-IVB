@@ -1,0 +1,240 @@
+:root {
+  --hitam: #000000;
+  --maroon: #8E1616;
+  --cream: #E8C999;
+  --putih-lembut: #F8EEDF;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background-color: var(--putih-lembut);
+  color: var(--hitam);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--hitam);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--cream);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: var(--cream);
+}
+
+.hero h1 {
+  color: var(--maroon);
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.hero .tagline {
+  font-style: italic;
+  font-size: 18px;
+  color: var(--hitam);
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 10px solid var(--maroon);
+    
+    box-shadow: 0 0 15px var(--hitam);
+    margin-bottom: 25px;
+}
+
+/* Social Links */
+.social-links a {
+  color: var(--hitam);
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--maroon);
+}
+
+/* About Section */
+.about {
+  background-color: var(--putih-lembut);
+  padding: 60px 20px;
+}
+
+.about h2 {
+  color: var(--maroon);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about p {
+  max-width: 800px;
+  text-align: center; 
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Skills */
+.skills .skill {
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.progress {
+  background-color: #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress div {
+  background-color: var(--maroon);
+  height: 10px;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Experience */
+.education ul,
+.experience ul,
+.organization-experience ul,
+.hobby ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.education li,
+.experience li,
+.organization-experience li,
+.hobby li {
+  margin: 10px 0;
+}
+
+/* Contact Section */
+.contact {
+  background-color: var(--cream);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  color: var(--maroon);
+  margin-bottom: 30px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid var(--maroon);
+  border-radius: 5px;
+  background-color: var(--putih-lembut);
+  color: var(--hitam);
+}
+
+#contact-form button {
+  background-color: var(--maroon);
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+}
+
+#contact-form button:hover {
+  background-color: var(--hitam);
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: var(--hitam);
+  color: var(--putih-lembut);
+}
+
+body.dark-mode .navbar {
+  background-color: var(--maroon);
+}
+
+body.dark-mode .nav-links a {
+  color: var(--putih-lembut);
+}
+
+body.dark-mode .hero,
+body.dark-mode .about,
+body.dark-mode .contact {
+  background-color: #1a1a1a;
+  color: var(--putih-lembut);
+}
+
+body.dark-mode .progress div {
+  background-color: var(--cream);
+}
+
+body.dark-mode #contact-form input,
+body.dark-mode #contact-form textarea {
+  background-color: #333;
+  color: white;
+  border: 2px solid var(--cream);
+}
+
+body.dark-mode #contact-form button {
+  background-color: var(--cream);
+  color: var(--hitam);
+}
+
+body.dark-mode footer {
+  background-color: #111;
+  color: var(--cream);
+}
+
+body.dark-mode .social-links a:hover {
+  color: var(--cream);
+}
+
+/* Transisi Halus */
+* {
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+
+/* Footer */
+footer {
+  background-color: var(--hitam);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
