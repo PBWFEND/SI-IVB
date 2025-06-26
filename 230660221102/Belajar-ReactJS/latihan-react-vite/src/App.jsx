@@ -3,12 +3,13 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-
-      
-
-      <h1 className="title">Hello! i Am Portgas D Ac</h1>
-      <p className="teks">Perkenalkan saya adalahahahahaha mahasiswa hihihi alamat saya di desa sukamaju kec. suka senang </p>
+    <div className="content-container"> 
+      <img src="src/assets/1.jpg" alt="Gambar Profil"></img>
+      <h1 className="title">Hello! i Am Jajang Komara</h1>
+      <p className="description">
+        Hai, saya Jajang Komara, mahasiswa Sistem Informasi UNSAP. 
+        Saya suka memecahkan masalah kompleks dengan pendekatan yang out-of-the-box dan siap berkontribusi pada proyek-proyek menarik.
+      </p>
     </div>
   )
 }
