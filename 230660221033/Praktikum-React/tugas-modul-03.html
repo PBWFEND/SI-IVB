@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Modul 03: Latihan</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .kontainer-profil {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .kartu-profil {
+            display: flex;
+            align-items: center;
+            border: 1px solid #acc;
+            border-radius: 8px;
+            padding: 16px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 400px;
+        }
+
+        .kartu-profil img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 16px;
+        }
+
+        .kartu-profil h3 {
+            margin: 0 0 5px 0;
+        }
+
+        .kartu-profil p {
+            margin: 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        function ProfilPengguna({ gambar, nama, hobi }) {
+            return (
+                <div className="kartu-profil">
+                    <img src={gambar} alt={"Foto " + nama} />
+                    <div>
+                        <h3>{nama}</h3>
+                        <p>Hobi: {hobi}</p>
+                    </div>
+                </div>
+            );
+        }
+
+        function App() {
+            return (
+                <div className="kontainer-profil">
+                    <ProfilPengguna
+                        gambar="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400"
+                        nama="Jane Doe"
+                        hobi="Fotografi dan hiking"
+                    />
+                    <ProfilPengguna
+                        gambar="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400"
+                        nama="John Smith"
+                        hobi="Main gitar dan coding"
+                    />
+                    <ProfilPengguna
+                        gambar="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400"
+                        nama="Sarah Wilson"
+                        hobi="Desain grafis dan membaca"
+                    />
+                </div>
+            );
+        }
+
+        const container = document.getElementById('root');
+        const root = ReactDOM.createRoot(container);
+        root.render(<App />);
+    </script>
+</body>
+</html>
