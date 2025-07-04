@@ -1,0 +1,12 @@
+.app-container {
+  padding: 40px;
+  font-family: sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+}
+.profil-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
