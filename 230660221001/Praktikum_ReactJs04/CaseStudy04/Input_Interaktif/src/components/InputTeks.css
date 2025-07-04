@@ -1,0 +1,22 @@
+.input-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+  margin: 20px auto;
+  background-color: #fefefe;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+}
+
+.display-teks {
+  color: #555;
+  font-size: 16px;
+}
