@@ -20,3 +20,8 @@ Proyek studi kasus berbasis HTML, CSS dan JS yang menampilkan data diri dalam be
 
 - UTS
 Berisi proyek pengerjaan Ujian Tengah Semester  
+
+- Praktikum React  
+Berisi folder latihan React dan JSX  serta React dengan Vite
+
+

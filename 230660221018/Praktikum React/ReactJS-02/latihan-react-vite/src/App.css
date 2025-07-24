@@ -1,0 +1,58 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #f8f9fc, #e2eafc);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  max-width: 500px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.title {
+  font-size: 36px;
+  color: #34495e;
+  margin-top: 20px;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+}
