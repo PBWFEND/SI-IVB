@@ -1,0 +1,32 @@
+/* src/InputTeks.css */
+.input-container {
+  background : linear-gradient(135deg, #ff95f6ff, #92b8ffff); /* Latar belakang gelap untuk card */
+  padding: 30px; /* Padding lebih besar untuk card */
+  border: none; /* Hapus border default */
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 1); /* Tambahkan bayangan untuk efek kedalaman */
+  
+  /* Gunakan Flexbox untuk memusatkan konten di dalam card itu sendiri */
+  display: flex;
+  flex-direction: column; /* Item (input dan p) tersusun vertikal */
+  align-items: center; /* Memusatkan item secara horizontal di dalam card */
+  gap: 15px; /* Jarak antara input dan paragraf */
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px; /* Padding lebih besar */
+  /* margin-bottom: 15px; <-- Hapus atau komentar karena sudah ada gap */
+  box-sizing: border-box;
+  background-color: #ffffff; /* Warna latar belakang input */
+  border: 1px solid #555; /* Border input */
+  border-radius: 4px;
+  color: #eee; /* Warna teks di input */
+  text-align: center; /* Memusatkan teks placeholder/input */
+}
+
+.display-teks {
+  color: #ffffff; /* Warna teks putih untuk kontras dengan background gelap */
+  margin: 0; /* Pastikan tidak ada margin tambahan pada paragraf */
+}
