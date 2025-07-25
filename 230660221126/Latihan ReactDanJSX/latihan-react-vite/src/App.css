@@ -1,0 +1,13 @@
+.title {
+  color: darkblue;
+  font-size: 36px;
+}
+
+.text{
+  color: magenta;
+  font-size: 36px;
+}
+
+body{
+  background-color: rgb(187, 95, 156);
+}

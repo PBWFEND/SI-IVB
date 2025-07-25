@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modul 03: Latihan Profil Pengguna</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        /* Gaya minimal untuk profil */
+        body { 
+            font-family: sans-serif; 
+            display: flex; /* Untuk menata profil secara berdampingan */
+            gap: 20px; /* Jarak antar profil */
+            padding: 20px; 
+            background-color: #f4f4f4; /* Warna latar belakang lembut */
+            justify-content: center; /* Pusatkan profil di tengah halaman */
+            flex-wrap: wrap; /* Agar profil bisa ke baris baru jika layar sempit */
+        }
+        .kartu-profil {
+            border: 1px solid #e0e0e0; /* Border lebih lembut */
+            border-radius: 12px; /* Sudut lebih membulat */
+            padding: 20px;
+            text-align: center;
+            width: 240px; /* Lebar kartu sedikit lebih besar */
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* Bayangan lebih halus */
+            transition: transform 0.2s ease-in-out; /* Transisi halus saat hover */
+            display: flex; /* Untuk menata konten di dalam kartu */
+            flex-direction: column; /* Konten vertikal */
+            align-items: center; /* Pusatkan secara horizontal */
+        }
+        .kartu-profil:hover {
+            transform: translateY(-5px); /* Efek melayang saat dihover */
+        }
+        .kartu-profil img { 
+            width: 120px; /* Ukuran gambar profil */
+            height: 120px;
+            border-radius: 50%; /* Membuat gambar lingkaran */
+            object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
+            border: 3px solid #61dafb; /* Border warna React */
+            margin-bottom: 15px; /* Jarak antara gambar dan nama */
+        }
+        .kartu-profil h3 { 
+            margin: 0; /* Hapus margin default browser */
+            color: #333; /* Warna teks nama */
+            font-size: 1.5em; /* Ukuran font nama */
+        }
+        .kartu-profil p { 
+            margin: 5px 0 0 0; /* Jarak antara nama dan hobi */
+            color: #777; /* Warna teks hobi */
+            font-size: 1em; /* Ukuran font hobi */
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // Data untuk 3 profil pengguna
+        const usersData = [
+            { 
+                id: 1, 
+                gambar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400", 
+                nama: "Marsya Anastasya", 
+                hobi: "Membaca Buku, Coding" 
+            },
+            { 
+                id: 2, 
+                gambar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400", 
+                nama: "Kian Putra", 
+                hobi: "Melukis, Fotografi" 
+            },
+            { 
+                id: 3, 
+                gambar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww", 
+                nama: "Agil Putra", 
+                hobi: "Bermain Gitar, Mendaki Gunung" 
+            },
+        ];
+
+        // 1. Buat komponen ProfilPengguna
+        function ProfilPengguna({ gambar, nama, hobi }) {
+            return (
+                <div className="kartu-profil">
+                    <img src={gambar} alt={"Foto " + nama} />
+                    <h3>{nama}</h3>
+                    <p>{hobi}</p>
+                </div>
+            );
+        }
+
+        // 2. Buat komponen App
+        function App() {
+            return (
+                <>
+                    {usersData.map(user => (
+                        <ProfilPengguna 
+                            key={user.id} 
+                            gambar={user.gambar} 
+                            nama={user.nama} 
+                            hobi={user.hobi} 
+                        />
+                    ))}
+                </>
+            );
+        }
+        
+        // 3. Render komponen App ke dalam elemen dengan id="root"
+        const container = document.getElementById('root');
+        const root = ReactDOM.createRoot(container);
+        root.render(<App />);
+    </script>
+</body>
+</html>

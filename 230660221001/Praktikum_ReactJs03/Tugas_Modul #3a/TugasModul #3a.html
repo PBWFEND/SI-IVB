@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Modul 03 Tugas</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #f5f5f5;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+      }
+      .kartu-profil {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        width: 220px;
+        text-align: center;
+        padding: 20px;
+      }
+      .kartu-profil img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #e0e0e0;
+      }
+      .kartu-profil h3 {
+        margin: 12px 0 4px;
+        font-size: 18px;
+      }
+      .kartu-profil p {
+        margin: 0;
+        font-size: 14px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      // Komponen ProfilPengguna menerima props: gambar, nama, dan hobi
+      function ProfilPengguna({ gambar, nama, hobi }) {
+        return (
+          <div className="kartu-profil">
+            <img src={gambar} alt={"Foto " + nama} />
+            <h3>{nama}</h3>
+            <p>Hobi: {hobi}</p>
+          </div>
+        );
+      }
+
+      // Komponen App memuat 3 profil
+      function App() {
+        return (
+          <>
+            <ProfilPengguna
+              gambar="https://i.imgur.com/LnYpUVN.jpeg"
+              nama="Gathan Zalfaa"
+              hobi="Berkegiatan Outdoor"
+            />
+            <ProfilPengguna
+              gambar="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400"
+              nama="Ayu Larasati"
+              hobi="Membaca novel fantasi"
+            />
+            <ProfilPengguna
+              gambar="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400"
+              nama="Rizky Saputra"
+              hobi="Fotografi & hiking"
+            />
+          </>
+        );
+      }
+
+      // Render ke dalam elemen dengan id="root"
+      const container = document.getElementById("root");
+      const root = ReactDOM.createRoot(container);
+      root.render(<App />);
+    </script>
+  </body>
+</html>

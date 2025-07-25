@@ -1,0 +1,66 @@
+/* src/App.css */
+body {
+  margin: 0;
+  padding: 0; /* Pastikan tidak ada padding/margin default pada body */
+  background-color: #565756ff; /* Warna latar belakang gelap seperti gambar */
+  color: white; /* Warna teks default putih untuk kontras */
+  font-family: Arial, sans-serif; /* Font yang lebih umum */
+}
+
+.app-wrapper {
+  display: flex; /* Aktifkan Flexbox */
+  flex-direction: column; /* Susun item (judul dan InputTeks) secara vertikal */
+  justify-content: center; /* Pusatkan item secara vertikal di dalam wrapper */
+  align-items: center;   /* Pusatkan item secara horizontal di dalam wrapper */
+  min-height: 100vh; /* Pastikan wrapper mengambil tinggi penuh viewport */
+  width: 100vw; /* Pastikan wrapper mengambil lebar penuh viewport */
+  box-sizing: border-box; /* Pastikan padding tidak menambah ukuran total */
+}
+
+h1 {
+  margin-bottom: 30px; /* Beri jarak antara judul dan komponen InputTeks */
+  font-size: 2.5em; /* Ukuran font judul */
+  text-align: center; /* Pastikan teks di dalam h1 terpusat */
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

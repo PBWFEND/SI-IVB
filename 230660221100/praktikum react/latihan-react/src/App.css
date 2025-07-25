@@ -1,0 +1,60 @@
+/* src/App.css */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background : linear-gradient(135deg, #a1fffaff, #fd799aff, #013597ff);
+  color: #333; /* Warna teks default */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column; /* Tata letak kolom */
+  align-items: center;   /* Pusatkan horizontal */
+  padding: 40px 20px; /* Padding atas/bawah dan samping */
+  min-height: 100vh; /* Pastikan mengambil tinggi penuh */
+  box-sizing: border-box; /* Hitung padding dalam total ukuran */
+}
+
+h1 {
+  color: #2c3e50; /* Warna judul utama */
+  margin-bottom: 50px; /* Jarak bawah yang lebih besar */
+  font-size: 3em;
+  text-align: center;
+}
+
+.dashboard-section {
+  width: 100%;
+  max-width: 600px; /* Batasi lebar setiap bagian dashboard */
+  margin-bottom: 40px; /* Jarak antar bagian */
+  padding: 20px;
+  background-color: #ffffff; /* Latar belakang putih untuk setiap bagian */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Bayangan yang lebih menonjol */
+  text-align: center; /* Pusatkan konten di dalam setiap bagian */
+}
+
+.dashboard-section h2 {
+  color: #34495e; /* Warna judul bagian */
+  margin-bottom: 25px;
+  font-size: 2em;
+}
+
+/* Penyesuaian untuk Card di dalam dashboard-section */
+.dashboard-section .card-wrapper {
+  margin: 0 auto; /* Pastikan card di tengah dalam section */
+  max-width: 300px; /* Batasi lebar card */
+}
+
+/* Pastikan gambar di ProfilPengguna responsif */
+.dashboard-section .card-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Membuat gambar profil bulat */
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Memastikan gambar mengisi area tanpa distorsi */
+    margin-bottom: 15px;
+    border: 3px solid #ffffffff; /* Border biru untuk gambar profil */
+}

@@ -1,0 +1,43 @@
+/* src/components/Card.css */
+
+.card-wrapper {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    width: 220px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Perbaikan syntax rgba */
+    transition: transform 0.2s ease-in-out;
+    margin: 10px; /* Untuk jarak antar kartu */
+    display: flex; /* Untuk menata konten di dalam Card */
+    flex-direction: column; /* Mengatur konten secara vertikal */
+    align-items: center; /* Pusatkan item secara horizontal */
+}
+
+.card-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+.card-wrapper img { /* Styling untuk gambar di dalam Card */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Membuat gambar lingkaran */
+    object-fit: cover;
+    border: 4px solid #f0f0f0;
+    margin-bottom: 15px; /* Tambahkan sedikit jarak bawah gambar */
+}
+
+.card-wrapper h3 { /* Styling untuk h3 di dalam Card */
+    margin-top: 0; /* Setel ulang margin default browser */
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.card-wrapper p { /* Styling untuk p di dalam Card */
+    margin-top: 0; /* Setel ulang margin default browser */
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
