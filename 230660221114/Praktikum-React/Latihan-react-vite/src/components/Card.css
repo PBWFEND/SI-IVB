@@ -1,0 +1,12 @@
+/* src/components/Card.css */
+.card-wrapper {
+    background-color: #ffffff; /* Latar belakang putih */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 15px; /* Memberi sedikit margin antar card jika ada beberapa */
+    display: flex; /* Untuk menata konten internal card */
+    flex-direction: column;
+    align-items: center;
+}
