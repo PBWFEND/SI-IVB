@@ -39,12 +39,3 @@ Laporan screenshot UTS
 ![Screenshot 2025-05-23 141140](https://github.com/user-attachments/assets/15a772c6-7f16-4028-beed-745f94015fc7)
 ![Screenshot 2025-05-23 141228](https://github.com/user-attachments/assets/3609d5ed-ceed-41d7-9ce4-1a878cc927a7)
 
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,53 @@
+/* Container utama untuk komponen TombolAuth */
+.auth-container {
+  padding: 30px; /* Tingkatkan padding untuk tampilan yang lebih lega */
+  border: 1px solid #ddd; /* Warna border yang lebih terang */
+  border-radius: 12px; /* Radius border yang sedikit lebih besar untuk tampilan lembut */
+  background-color: #f9f9f9; /* Latar belakang yang lebih terang */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk kedalaman */
+  text-align: center; /* Pusatkan semua teks dan tombol di dalamnya */
+  max-width: 400px; /* Batasi lebar maksimum container */
+  margin: 50px auto; /* Pusatkan container secara horizontal dan beri margin atas/bawah */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Pilih font yang modern */
+}
+
+/* Gaya untuk judul (h2) */
+.auth-container h2 {
+  color: #333; /* Warna teks yang lebih gelap */
+  margin-bottom: 25px; /* Jarak bawah yang lebih besar */
+  font-size: 1.8em; /* Ukuran font yang lebih besar */
+}
+
+/* Gaya dasar untuk tombol */
+.auth-container button {
+  background-color: #007bff; /* Warna biru primer */
+  color: white; /* Teks putih */
+  padding: 12px 25px; /* Padding tombol yang lebih besar */
+  border: none; /* Hapus border */
+  border-radius: 8px; /* Radius border tombol */
+  font-size: 1.1em; /* Ukuran font tombol */
+  cursor: pointer; /* Indikator bahwa elemen bisa diklik */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transisi halus untuk hover */
+  outline: none; /* Hapus outline saat fokus */
+}
+
+/* Gaya saat tombol di-hover */
+.auth-container button:hover {
+  background-color: #0056b3; /* Warna biru yang lebih gelap saat di-hover */
+  transform: translateY(-2px); /* Efek sedikit naik saat di-hover */
+}
+
+/* Gaya saat tombol aktif (ditekan) */
+.auth-container button:active {
+  background-color: #004085; /* Warna biru yang lebih gelap saat aktif */
+  transform: translateY(0); /* Kembali ke posisi semula saat aktif */
+}
+
+/* Gaya khusus untuk tombol Logout */
+.auth-container button.logout-button { /* Anda bisa menambahkan kelas ini di JSX jika ingin gaya berbeda */
+    background-color: #dc3545; /* Warna merah untuk logout */
+}
+
+.auth-container button.logout-button:hover {
+    background-color: #c82333;
+}
