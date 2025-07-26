@@ -10,7 +10,7 @@ function App() {
   const dataPengguna = {
     nama: "Intan Nurdewi Sekarnasih",
     pekerjaan: "Pengembang Web",
-    gambar: "c:Pictures\Intan N.jpeg"
+    gambar: "Intan N"
   };
 
   const dataPengumuman = {

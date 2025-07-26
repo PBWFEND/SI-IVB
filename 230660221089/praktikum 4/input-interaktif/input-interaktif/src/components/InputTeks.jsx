@@ -14,7 +14,7 @@ function InputTeks() {
         type="text"
         value={teks} // 
         onChange={handleChange} // 
-        placeholder="Halo Nama Saya Rian"
+        placeholder="Halo Nama Saya Intan N"
       />
       <p className="display-teks">
         Anda mengetik: <strong>{teks}</strong>
