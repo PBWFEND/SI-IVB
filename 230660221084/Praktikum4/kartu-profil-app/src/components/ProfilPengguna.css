@@ -1,0 +1,39 @@
+/* src/components/ProfilPengguna.css */
+
+.kartu_profile {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    width: 220px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0, 1);
+    transition: transform 0.2s;
+}
+
+.kartu_profile:hover {
+    transform: translate(-5px);
+}
+
+.kartu_profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f0f0f0;
+}
+
+/* Styling untuk h3 di dalam .kartu_profile */
+.kartu_profile h3 {
+    margin-top: 15px; /* Jarak atas dari gambar */
+    margin-bottom: 5px; /* Jarak bawah dari paragraf */
+    color: #000; /* Warna teks yang sedikit lebih gelap */
+    font-size: 1.2em; /* Ukuran font yang sedikit lebih besar */
+}
+
+/* Styling untuk p di dalam .kartu_profile */
+.kartu_profile p {
+    color: #000; /* Warna teks abu-abu */
+    font-size: 0.9em; /* Ukuran font yang sedikit lebih kecil */
+    line-height: 1.5; /* Spasi antar baris */
+}
